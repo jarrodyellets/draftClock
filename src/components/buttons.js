@@ -11,38 +11,14 @@ class Buttons extends Component {
 
 		this.handlePickClick = this.handlePickClick.bind(this);
 		this.handlePauseClick = this.handlePauseClick.bind(this);
-		this.draftSound = new Audio("https://www.jarrodyellets.com/sounds/draft.mp3");
-		this.loserSound = new Audio("https://www.jarrodyellets.com/sounds/loser.mp3");
-		this.eaglesSound = new Audio("https://www.jarrodyellets.com/sounds/eagles.mp3");
+
 
 	}
 
 	handlePickClick(){
-		let dSound = this.draftSound;
-		let lSound = this.loserSound;
-		let eSound = this.eaglesSound;
-		const vanSound = new Audio("https://www.jarrodyellets.com/sounds/vSound.mp3");
 		this.props.resetTime();
-		this.props.changePick((this.props.pick) + 1)
-		setTimeout(() => {
-			dSound.play();
-		})
-		this.draftSound.play();
-		// if(this.props.pick == 3){
-		// 	setTimeout(function(){
-		// 		lSound.play();
-		// 	}, 4000);
-		// }
-		// if(this.props.pick == 4){
-		// 	setTimeout(() => {
-		// 		eSound.play();
-		// 	}, 4000);
-		// }
-		if(this.props.pick == 10){
-			setTimeout(() => {
-				vanSound.play();
-			}, 3000);
-		}
+		this.props.changePick((this.props.pick) + 1);
+		this.props.playSounds();
 	}
 
 	handlePauseClick(){
@@ -54,11 +30,13 @@ class Buttons extends Component {
 			this.setState({
 				button: "PAUSE CLOCK"
 			})
-			this.draftSound.play();
+			this.props.playSounds();
+			this.props.startTimer();
 		} else {
 			this.setState({
 				button: "START CLOCK"
 			})
+			this.props.pauseTimer();
 		}
 	}
 

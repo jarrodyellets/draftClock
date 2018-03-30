@@ -32,11 +32,7 @@ class Intro extends Component {
 				audio: ''
 			})
 			this.props.startTimer();
-			let draftSound = new Audio("https://www.jarrodyellets.com/sounds/draft.mp3");
-			setTimeout(function(){
-				draftSound.play();
-			}, 500);
-			
+			this.props.playSounds();	
 		}
 	}
 
