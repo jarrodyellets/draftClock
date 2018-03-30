@@ -1,0 +1,190 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	font-family: 'Audiowide', cursive;
+}
+
+.none {
+	display: none;
+}
+
+.background {
+	width: 100vw;
+	height: 100vh;
+	padding-top: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.intro {
+	background-image: url("/src/images/introBackground.jpg");
+}
+
+.draft {
+	background-image: url("/src/images/draftBackground.jpg")
+}
+
+.trophy {
+	width: 20vw;
+	height: 45vh;
+	margin: 0 auto;
+	opacity: 1;
+	background-image: url('/src/images/trophyIcon.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: trophy 5s ease-out;
+}
+
+.introTitle {
+	position: relative;
+	text-align: center;
+	font-size: 70px;
+	color: #f3ffff;
+	animation: title 2s ease-out;
+}
+
+.hideTrophy {
+	width: 20vw;
+	height: 45vh;
+	margin: 0 auto;
+	opacity: 0;
+}
+
+.hideTitle {
+	text-align: center;
+	font-size: 70px;
+	opacity: 0;
+}
+
+.button {
+	display: block;
+	margin: 0 auto;
+	font-size: 34px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	border-radius: 10px;
+	border: 3px solid #171635;
+	color: #f3ffff;
+	background: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.enterAni {
+	animation: clockButton 11s ease-out;
+}
+
+
+.draftDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: #f3ffff;
+	padding-top: 20px;
+}
+
+.teamName {
+	font-size: 80px;
+	margin: 0 0 10px 0;
+	letter-spacing: 10px;
+	text-align: center;
+	color: #f3ffff;
+}
+
+.teamIcon {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.roundInfo {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 40px;
+	letter-spacing: 5px;
+	padding-left: 100px;
+}
+
+.num {
+	font-family: 'Inconsolata', monospace;
+	color: #d6fc72;
+	font-size: 40px;
+	text-align: right;
+	font-weight: 700;
+}
+
+.logo {
+	border-radius: 20px;
+}
+
+.clockLabel {
+	font-size: 80px;
+	letter-spacing: 5px;
+	text-decoration: underline;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.clock {
+	text-align: center;
+	font-weight: 700;
+	font-size: 180px;
+	font-family: 'Inconsolata', monospace;
+	color: #d6fc72;
+	padding-bottom: 10px;
+}
+
+.buttonDiv {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 100px;
+}
+
+@keyframes title {
+	0% {
+		margin-left: -200%;
+	}
+	80% {
+		margin-left: -200%;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+
+@keyframes trophy {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes clockButton {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	79% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
