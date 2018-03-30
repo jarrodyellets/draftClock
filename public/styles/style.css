@@ -122,7 +122,10 @@ body {
 }
 
 .logo {
-	border-radius: 20px;
+	border-radius: 50%;
+	border: 3px solid #111;
+	width: 150px;
+	height: 150px;
 }
 
 .clockLabel {
@@ -130,7 +133,7 @@ body {
 	letter-spacing: 5px;
 	text-decoration: underline;
 	text-align: center;
-	padding: 10px 0;
+	padding-top: 10px;
 }
 
 .clock {
