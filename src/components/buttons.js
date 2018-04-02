@@ -12,7 +12,6 @@ class Buttons extends Component {
 		this.handlePickClick = this.handlePickClick.bind(this);
 		this.handlePauseClick = this.handlePauseClick.bind(this);
 
-
 	}
 
 	handlePickClick(){
