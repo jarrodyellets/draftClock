@@ -61,7 +61,7 @@ body {
 .button {
 	display: block;
 	margin: 0 auto;
-	font-size: 34px;
+	font-size: 5vh;
 	font-family: 'PT Sans Narrow', sans-serif;
 	border-radius: 10px;
 	border: 3px solid #171635;
@@ -89,11 +89,12 @@ body {
 }
 
 .teamName {
-	font-size: 80px;
-	margin: 0 0 10px 0;
+	font-size: 11vh;
+	margin: 0;
 	letter-spacing: 10px;
 	text-align: center;
 	color: #f3ffff;
+	text-transform: uppercase;
 }
 
 .teamIcon {
@@ -108,7 +109,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	font-size: 40px;
+	font-size: 6.5vh;
 	letter-spacing: 5px;
 	padding-left: 100px;
 }
@@ -116,7 +117,7 @@ body {
 .num {
 	font-family: 'Inconsolata', monospace;
 	color: #d6fc72;
-	font-size: 40px;
+	font-size: 6.5vh;
 	text-align: right;
 	font-weight: 700;
 }
@@ -124,12 +125,12 @@ body {
 .logo {
 	border-radius: 50%;
 	border: 3px solid #111;
-	width: 150px;
-	height: 150px;
+	width: 22vh;
+	height: 22vh;
 }
 
 .clockLabel {
-	font-size: 80px;
+	font-size: 9vh;
 	letter-spacing: 5px;
 	text-decoration: underline;
 	text-align: center;
@@ -139,7 +140,7 @@ body {
 .clock {
 	text-align: center;
 	font-weight: 700;
-	font-size: 180px;
+	font-size: 25vh;
 	font-family: 'Inconsolata', monospace;
 	color: #d6fc72;
 	padding-bottom: 10px;
