@@ -8,7 +8,6 @@ const TeamName = (props) => {
 
 	return (
 		<h1 className="teamName">{props.team}</h1>
-
 		)
 }
 
