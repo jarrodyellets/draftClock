@@ -32,7 +32,7 @@ class Intro extends Component {
 				audio: ''
 			})
 			this.props.startTimer();
-			this.props.playSounds();	
+			this.props.playSounds();
 		}
 	}
 

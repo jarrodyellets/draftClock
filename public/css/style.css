@@ -18,11 +18,11 @@ body {
 }
 
 .intro {
-	background-image: url("/src/images/introBackground.jpg");
+	background-image: url("https://www.jarrodyellets.com/images/foff/introBackground.jpg");
 }
 
 .draft {
-	background-image: url("/src/images/draftBackground.jpg")
+	background-image: url("https://www.jarrodyellets.com/images/foff/draftBackground.jpg")
 }
 
 .trophy {
@@ -30,7 +30,7 @@ body {
 	height: 45vh;
 	margin: 0 auto;
 	opacity: 1;
-	background-image: url('/src/images/trophyIcon.png');
+	background-image: url('https://www.jarrodyellets.com/images/foff/trophyIcon.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;

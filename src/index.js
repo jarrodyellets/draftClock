@@ -9,6 +9,8 @@ import teams from './data/teams';
 import name from './data/newDraft';
 import newDraft from './data/newDraft';
 
+import style from '../public/css/style.css';
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -113,7 +115,7 @@ class App extends Component {
 			setTimeout(() => {
 				vanSound.play();
 			}, 3000);
-		} 
+		}
 	}
 
 	render() {
