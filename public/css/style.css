@@ -43,6 +43,7 @@ body {
 	font-size: 70px;
 	color: #f3ffff;
 	animation: title 2s ease-out;
+	margin-bottom: 10px;
 }
 
 .hideTrophy {
@@ -64,8 +65,9 @@ body {
 	font-size: 5vh;
 	font-family: 'PT Sans Narrow', sans-serif;
 	border-radius: 10px;
-	border: 3px solid #171635;
+	border: 3px solid #f3ffff;
 	color: #f3ffff;
+	padding: 3px 10px;
 	background: rgba(0, 0, 0, 0);
 	cursor: pointer;
 }
@@ -99,7 +101,7 @@ body {
 
 .teamIcon {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -114,17 +116,29 @@ body {
 	padding-left: 100px;
 }
 
+.round, .pick {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
 .num {
 	font-family: 'Inconsolata', monospace;
 	color: #d6fc72;
 	font-size: 6.5vh;
 	text-align: right;
 	font-weight: 700;
+	margin-left: 20px;
 }
 
 .logo {
 	border-radius: 50%;
-	border: 3px solid #111;
+	border: 1px solid #111;
+	-webkit-box-shadow: 0px 0px 0px 3px rgba(243,255,255,1);
+	-moz-box-shadow: 0px 0px 0px 3px rgba(243,255,255,1);
+	box-shadow: 0px 0px 0px 3px rgba(243,255,255,1);
 	width: 22vh;
 	height: 22vh;
 }
