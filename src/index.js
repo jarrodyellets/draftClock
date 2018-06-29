@@ -97,8 +97,6 @@ class App extends Component {
 
 	playSounds(){
 		const draftSound = new Audio("https://www.jarrodyellets.com/sounds/draft.mp3");
-		const loserSound = new Audio("https://www.jarrodyellets.com/sounds/loser.mp3");
-		const eaglesSound = new Audio("https://www.jarrodyellets.com/sounds/eagles.mp3");
 		const vanSound = new Audio("https://www.jarrodyellets.com/sounds/vSound.mp3");
 		setTimeout(() => {
 			draftSound.play();
