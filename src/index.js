@@ -103,19 +103,10 @@ class App extends Component {
 		setTimeout(() => {
 			draftSound.play();
 		}, 500);
-		if(this.state.pick == 3){
+		if(this.state.pick == 10){
 			setTimeout(() => {
-				loserSound.play()
+				vanSound.play()
 			}, 4000);
-		} else if(this.state.pick == 4){
-			setTimeout(() => {
-				eaglesSound.play();
-			}, 4000);
-		} else if(this.state.pick == 10){
-			setTimeout(() => {
-				vanSound.play();
-			}, 3000);
-		}
 	}
 
 	render() {
