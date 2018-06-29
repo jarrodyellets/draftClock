@@ -107,6 +107,7 @@ class App extends Component {
 			setTimeout(() => {
 				vanSound.play()
 			}, 4000);
+		} 
 	}
 
 	render() {
